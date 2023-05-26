@@ -1,0 +1,5 @@
+requests
+redshift-connector
+jupyterlab
+ipykernel
+python-dotenv
