@@ -13,7 +13,7 @@ ___
 - Top 10 productos
 
 ___
-***Se debe aclarar que el desarrollo hecho con Pandas es meramente practico, no va a quedar asi para el proximo entregable, por cuestiones de tiempo se realizo con esta libreria pero en un entorno productivo se usara Spark (aunque con pocos datos tenga menos rendimiento) debido a que de cara a futuro y a un requerimiento mayor es mejor herramienta***
+***Se debe aclarar que el desarrollo hecho con Pandas es meramente practico, no va a quedar asi para el proximo entregable, por cuestiones de tiempo se realizo con esta libreria pero en un entorno productivo se usara Spark (aunque con pocos datos tenga menos rendimiento) debido a que de cara a futuro y a un requerimiento mayor es mejor herramienta, asi como tambien la insercion de los datos en destino***
 
 ***Otra cosa para destacar es que el resultado de dicho analisis depende del funcionamiento del servicio de consulta de datos [Fake Store API](https://fakestoreapi.com/), en caso que dicho endpoint no funcione no se podra ver el resultado del ejercicio correctamente.***
 
