@@ -1,0 +1,7 @@
+__pycache__/
+.env
+../.ipynb*
+.ipynb*
+.vscode
+../coderhouse/
+.DS_Store
