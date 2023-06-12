@@ -21,3 +21,4 @@ ___
 ## Correcciones respecto al ejercicio anterior:
 - Se ignora el archivo .DS_Store
 - Se enriquecio con contenido el archivo README.md
+- Se generan mas variables de entorno
