@@ -22,3 +22,10 @@ ___
 - Se ignora el archivo .DS_Store
 - Se enriquecio con contenido el archivo README.md
 - Se generan mas variables de entorno
+- Se agrega fecha de carga en cada producto
+- Se quita columna descripcion
+- Se agregan registros extra con otras fechas
+
+## Se adjunta captura de insercion de datos en destino debido a que la cuenta no es de Coder y no pueden entrar los profes:
+
+![Screen datos en RedShift](data_stored.png)
