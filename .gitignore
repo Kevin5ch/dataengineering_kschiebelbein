@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 Entregable_3/airflow/dags/__pycache__/
+Entregable_3/airflow/scripts/entregable2/products/__pycache__/
 __pycache__/
 *.py[cod]
 *$py.class
