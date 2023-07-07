@@ -1,8 +1,9 @@
 from datetime import date, timedelta, datetime
 import logging
 import json
+import requests
 import pandas as pd
-from lib.entregable2.products.utils import getFakeData
+# from airflow.scripts.entregable2.products.utils import getFakeData
 from airflow.decorators import dag, task
 from airflow.operators.bash import BashOperator
 from sqlalchemy import create_engine
@@ -19,9 +20,18 @@ from dotenv import dotenv_values
 )
 def entregable_3():
 
+  def getFakeData(api : str = None):
+    products = {}
+    try:
+      products : dict = requests.get(api)
+    except Exception as e:
+      print(e)
+    finally:
+      return products
+
   bash_requirements = BashOperator(
     task_id="install_entregable2_requirements",
-    bash_command="cd /opt/airflow/dags && pip3 install -r ./lib/entregable2/requirements/requirements.txt",
+    bash_command="cd /opt/airflow/dags && pip3 install -r ../scripts/entregable2/requirements/requirements.txt",
   )
     
   @task(task_id="fetch_products_data")
