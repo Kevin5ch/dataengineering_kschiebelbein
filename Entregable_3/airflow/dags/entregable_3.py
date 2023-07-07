@@ -18,13 +18,13 @@ def entregable_3():
     bash_command="cd /opt/airflow/scripts/entregable2/requirements/ && pip3 install -r requirements.txt",
   )
     
-  fetch_products = BashOperator(
-    task_id="fetch_products_data",
+  extract_products = BashOperator(
+    task_id="extract_products",
     bash_command="cd /opt/airflow/scripts/entregable2/products/ && python3 extract_products.py",
   )
 
-  etl_process = BashOperator(
-    task_id="etl_products",
+  transform_process = BashOperator(
+    task_id="transform_products",
     bash_command="cd /opt/airflow/scripts/entregable2/products/ && python3 transform_products.py",
   )
 
@@ -33,6 +33,6 @@ def entregable_3():
     bash_command="cd /opt/airflow/scripts/entregable2/products/ && python3 load_products.py",
   )
   
-  bash_requirements >> fetch_products >> etl_process >> load_process
+  bash_requirements >> extract_products >> transform_process >> load_process
 
 entregable_3()
